@@ -9,13 +9,20 @@
 </head>
 <body>
     {{-- Header --}}
-    @include('partials.header')
+    <header>
+        @include('partials.header');
+    </header>
 
     {{-- Main --}}
-    @include('partials.main')
+    <main>
+        @include('partials.main');
+    </main>
+
 
     {{-- Footer --}}
-    @include('partials.footer')
+    <footer>
+        @include('partials.footer');
+    </footer>
 
 </body>
 </html>

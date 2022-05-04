@@ -20,5 +20,12 @@ use Illuminate\Support\Facades\Route;
 // Percorso URl che porta alla homepage
 Route::get('/', function () {
     $data = config('comics');
-    return view('layouts.homepage', ['comics' => $data]);
+    return view('layout.homepage', ['comics' => $data]);
+});
+
+
+
+Route::get('/products', function () {
+    $data = config('comics');
+    return view('partials.main', ['comics' => $data]);
 });
