@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-
+// Percorso URl che porta alla homepage
 Route::get('/', function () {
-    return view('layouts.homepage');
+    $data = config('comics');
+    return view('layouts.homepage', ['comics' => $data]);
 });
