@@ -7,3 +7,62 @@
 body {
   background-color: black;
 }
+
+div.stripe-blue {
+  height: 8vh;
+  background-color: #0282f9;
+}
+
+div.top {
+  padding: 3rem 0;
+  background-color: white;
+}
+div.top section.wrap {
+  width: 900px;
+  display: flex;
+  margin: 0 auto;
+}
+div.top section.wrap div.description {
+  width: 70%;
+  padding: 0 1rem;
+  background-color: aqua;
+}
+div.top section.wrap div.description h1.title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+div.top section.wrap div.description div.check {
+  height: 50px;
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+  background-color: lightgreen;
+}
+div.top section.wrap div.description div.check div.aside-left {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  padding: 0 1.5rem;
+  border-right: 1px solid black;
+}
+div.top section.wrap div.description div.check div.aside-right {
+  width: 25%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+div.top section.wrap div.icon {
+  width: 30%;
+  padding: 1rem;
+  background-color: rosybrown;
+}
+div.top section.wrap div.icon img.icon-immage {
+  width: 100%;
+}
+
+div.bottom {
+  background-color: lightgray;
+}

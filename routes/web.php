@@ -29,3 +29,13 @@ Route::get('/products', function () {
 });
 
 
+Route::get('/products/{index}', function ($index) {
+    $cardList = config('comics');
+    if(is_numeric($index) && $index >= 0 && $index < count($cardList)){
+        return view('guest.detail', ['card' => $cardList[$index]]);
+    }else{
+        abort(404);
+    }
+});
+
+

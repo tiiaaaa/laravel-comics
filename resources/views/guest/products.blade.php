@@ -6,7 +6,7 @@
 <div id="main-content-card">
     <section class="my-container">
         @foreach ($comics as $comicElement)
-            <a href="#" class="card">
+            <a href="/products/1" class="card">
                 <div class="card-immage">
                     <img src="{{$comicElement['thumb']}}" alt="{{$comicElement['series']}}">
                 </div>

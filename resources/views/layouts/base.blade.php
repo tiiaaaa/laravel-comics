@@ -15,13 +15,13 @@
 
     {{-- Main --}}
     <main>
-        @yield('main-content');
+        @yield('main-content')
     </main>
 
 
     {{-- Footer --}}
     <footer>
-        @include('partials.footer');
+        @include('partials.footer')
     </footer>
 
 </body>
