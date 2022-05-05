@@ -27,3 +27,5 @@ Route::get('/products', function () {
     $data = config('comics');
     return view('guest.products', ['comics' => $data]);
 });
+
+

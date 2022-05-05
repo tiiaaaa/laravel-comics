@@ -1,0 +1,64 @@
+div.header{
+    background-color: white;
+
+    section.my-container{
+        height: 13vh;
+        width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div#logo-wrapper{
+            height: 80px;
+            width: 80px;
+
+            img.logo{
+                width: 100%;
+            }
+        }
+
+
+        nav#navbar-list{
+            height: 100%;
+            ul{
+                display: flex;
+                margin: 0;
+                height: 100%;
+
+                li{
+                    list-style-type: none;
+                    margin-left: 1.2rem;
+                    height: 100%;
+
+                    // &:hover,
+                    // &.active{
+                    //     border-bottom: 3px solid $primaryColor;
+                    // }
+
+                    a{
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        line-height: 90px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    div#main-content-jumbotron{
+        height: 50vh;
+
+        img{
+            width: 100%;
+            // min-width: 1500px;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+}

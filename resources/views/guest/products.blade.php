@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{asset('css/products.css')}}">
+
 @extends('layouts.base')
 
 @section('main-content')

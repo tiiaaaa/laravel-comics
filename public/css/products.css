@@ -2,6 +2,8 @@ div#main-content-card {
   padding: 2.5rem 0;
 }
 div#main-content-card section.my-container {
+  width: 1100px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
