@@ -52,6 +52,15 @@ div.top{
                     line-height: 50px;
                     padding: 0 1.5rem;
                     border-right: 1px solid black;
+
+                    span.price{
+                        color: white;
+                        font-weight: 600;
+                    }
+
+                    span.disponibility{
+                        text-transform: uppercase;
+                    }
                 }
 
                 div.aside-right{

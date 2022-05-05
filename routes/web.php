@@ -36,6 +36,6 @@ Route::get('/products/{index}', function ($index) {
     }else{
         abort(404);
     }
-});
+})->name('guest-detail');
 
 

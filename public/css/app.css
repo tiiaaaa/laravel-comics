@@ -48,6 +48,13 @@ div.top section.wrap div.description div.check div.aside-left {
   padding: 0 1.5rem;
   border-right: 1px solid black;
 }
+div.top section.wrap div.description div.check div.aside-left span.price {
+  color: white;
+  font-weight: 600;
+}
+div.top section.wrap div.description div.check div.aside-left span.disponibility {
+  text-transform: uppercase;
+}
 div.top section.wrap div.description div.check div.aside-right {
   width: 25%;
   height: 100%;

@@ -13,20 +13,23 @@
                     {{-- barra verde --}}
                     <div class="check">
                         <div class="aside-left">
-                            <span>ciao</span>
-                            <span>ciao</span>
+                            <p>
+                                <span>U.S. Price:</span>
+                                <span class="price">{{$card['price']}}</span>
+                            </p>
+                            <span class="disponibility">avalaible</span>
                         </div>
                         <div class="aside-right">
                             <span>Check Avalability</span>
                         </div>
                     </div>
                     {{-- descrizione --}}
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quas, consectetur alias temporibus, ab at, enim aliquid impedit aut amet doloremque esse quia earum labore aperiam nulla quod atque cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem beatae animi, consectetur ab expedita perspiciatis tempore fugiat eaque dolor modi impedit. Cum culpa nostrum delectus reiciendis, deserunt quisquam perferendis nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repudiandae amet impedit incidunt sunt, aliquam quisquam nihil aliquid</p>
+                    <p>{{$card['description']}}</p>
                 </div>
 
                 {{-- icona dell'immagine sulla destra --}}
                 <div class="icon">
-                    <img class="icon-immage" src="/img/adv.jpg" alt="">
+                    <img class="icon-immage" src="{{$card['thumb']}}" alt="">
                 </div>
 
             </section>
