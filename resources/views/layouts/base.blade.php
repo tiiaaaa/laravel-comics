@@ -15,7 +15,7 @@
 
     {{-- Main --}}
     <main>
-        @include('partials.main');
+        @yield('main-content');
     </main>
 
 

@@ -19,13 +19,11 @@ use Illuminate\Support\Facades\Route;
 
 // Percorso URl che porta alla homepage
 Route::get('/', function () {
-    $data = config('comics');
-    return view('layout.homepage', ['comics' => $data]);
+    return view('layouts.base');
 });
-
 
 
 Route::get('/products', function () {
     $data = config('comics');
-    return view('partials.main', ['comics' => $data]);
+    return view('guest.products', ['comics' => $data]);
 });
