@@ -1,16 +1,126 @@
 div.stripe-blue {
-  height: 10vh;
+  height: 8vh;
   background-color: #0282f9;
+}
+div.stripe-blue section.wrap-stripe-blue {
+  width: 980px;
+  position: relative;
+  margin: 0 auto;
+}
+div.stripe-blue section.wrap-stripe-blue div.dynamic-image {
+  height: 295px;
+  width: 210px;
+  position: absolute;
+  bottom: -40px;
+  border: 1px solid white;
+}
+div.stripe-blue section.wrap-stripe-blue div.dynamic-image img.icon-immage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+div.stripe-blue section.wrap-stripe-blue div.dynamic-image div.comic-book, div.stripe-blue section.wrap-stripe-blue div.dynamic-image div.view-gallery {
+  position: absolute;
+  background-color: rgb(102, 192, 240);
+}
+div.stripe-blue section.wrap-stripe-blue div.dynamic-image div.comic-book {
+  padding: 0.1rem 0.5rem;
+  top: 0;
+}
+div.stripe-blue section.wrap-stripe-blue div.dynamic-image div.view-gallery {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+div.stripe-blue section.wrap-stripe-blue div.dynamic-image p {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 0.8rem;
+  color: white;
 }
 
 div.top {
   background-color: white;
 }
+div.top section.wrap {
+  width: 980px;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+div.top section.wrap div.description {
+  width: 70%;
+  padding: 0 1rem;
+}
+div.top section.wrap div.description h3.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(21, 21, 69);
+  margin-bottom: 1.2rem;
+}
+div.top section.wrap div.description div.check {
+  height: 50px;
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+  background-color: lightgreen;
+}
+div.top section.wrap div.description div.check div.aside-left {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  padding: 0 1.5rem;
+  border-right: 1px solid black;
+}
+div.top section.wrap div.description div.check div.aside-left span.price {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+div.top section.wrap div.description div.check div.aside-left span.value {
+  color: white;
+}
+div.top section.wrap div.description div.check div.aside-left span.disponibility {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+div.top section.wrap div.description div.check div.aside-right {
+  width: 25%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+div.top section.wrap div.description div.check div.aside-right span.check-avalability {
+  color: white;
+  font-size: 0.9rem;
+}
+div.top section.wrap div.description p.card-description {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(106, 106, 106);
+}
+div.top section.wrap div.icon {
+  width: 30%;
+  padding-left: 1.5rem;
+}
+div.top section.wrap div.icon img.static-immage {
+  width: 100%;
+}
+div.top section.wrap div.advertisement {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+div.top section.wrap div.advertisement p.advertisement-text {
+  margin: 0;
+  font-weight: 600;
+  color: #032648;
+  text-transform: uppercase;
+}
 
 div.bottom {
   background-color: lightgray;
-}
-
-section.wrap {
-  width: 800px;
 }

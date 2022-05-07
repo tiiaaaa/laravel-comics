@@ -1,16 +1,158 @@
+
+// Barra blu in alto con all'interno la figurina dinamica
 div.stripe-blue{
-    height: 10vh;
+    height: 8vh;
     background-color: #0282f9;
+
+    section.wrap-stripe-blue{
+        width: 980px;
+        position: relative;
+        margin: 0 auto;
+
+        div.dynamic-image{
+            height: 295px;
+            width: 210px;
+            position: absolute;
+            bottom: -40px;
+            border: 1px solid white;
+
+            img.icon-immage{
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+
+            div.comic-book, div.view-gallery{
+                position: absolute;
+                background-color: rgb(102, 192, 240);
+            }
+
+            div.comic-book{
+                padding: .1rem .5rem;
+                top: 0;
+            }
+
+            div.view-gallery{
+                width: 100%;
+                text-align: center;
+                bottom: 0;
+            }
+
+            p{
+                text-transform: uppercase;
+                margin: 0;
+                font-size: .8rem;
+                color: white;
+            }
+        }
+
+    }
+
 }
 
+// Sezione intermedia con titolo, prezzo, descrizione della card e immagine statica
 div.top{
     background-color: white;
+
+    section.wrap{
+        width: 980px;
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        padding: 4rem 0;
+
+        // Div posizionato a sinistra con all' interno titiolo, prezzo/desponobiolita,
+        // e descrzione della card
+        div.description{
+            width: 70%;
+            padding: 0 1rem;
+
+            h3.title{
+                text-transform: uppercase;
+                font-weight: 600;
+                color: rgb(21, 21, 69);
+                margin-bottom: 1.2rem;
+            }
+
+            div.check{
+                height: 50px;
+                display: flex;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid black;
+                background-color: lightgreen;
+
+                div.aside-left{
+                    width: 75%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    line-height: 50px;
+                    padding: 0 1.5rem;
+                    border-right: 1px solid black;
+
+                    span.price{
+                        font-weight: 500;
+                        font-size: .9rem;
+                    }
+
+                    span.value{
+                        color: white;
+                    }
+
+                    span.disponibility{
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        font-size: .9rem;
+
+                    }
+                }
+
+                div.aside-right{
+                    width: 25%;
+                    height: 100%;
+                    line-height: 50px;
+                    text-align: center;
+
+                    span.check-avalability{
+                        color: white;
+                        font-size: .9rem;
+                    }
+                }
+            }
+
+            p.card-description{
+                font-size: .9rem;
+                font-weight: 500;
+                color: rgb(106, 106, 106);
+            }
+        }
+
+        // Div posizionato a destra con all'interno immagine statica e scritta advertisement
+        div.icon{
+            width: 30%;
+            padding-left: 1.5rem;
+
+            img.static-immage{
+                width: 100%;
+            }
+        }
+
+        div.advertisement{
+            position: absolute;
+            top: 40px;
+            right: 0;
+
+            p.advertisement-text{
+                margin: 0;
+                font-weight: 600;
+                color: #032648;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 
+// Sezione sul fondo contenente tutte le specifiche della card selezionata
 div.bottom{
     background-color: lightgray;
-}
-
-section.wrap{
-    width: 800px;
 }

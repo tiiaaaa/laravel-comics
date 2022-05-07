@@ -1,3 +1,5 @@
+@import "partials/_variables";
+
 div.header{
     background-color: white;
 
@@ -31,10 +33,10 @@ div.header{
                     margin-left: 1.2rem;
                     height: 100%;
 
-                    // &:hover,
-                    // &.active{
-                    //     border-bottom: 3px solid $primaryColor;
-                    // }
+                    &:hover,
+                    &.active{
+                        border-bottom: 3px solid $primaryColor;
+                    }
 
                     a{
                         font-size: 0.7rem;

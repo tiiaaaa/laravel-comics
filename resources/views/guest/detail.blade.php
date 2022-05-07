@@ -1,35 +1,66 @@
+<link rel="stylesheet" href="{{asset('css/detail.css')}}">
+
 @extends('layouts.base')
 
 @section('main-content')
         {{-- striscia blu vuota sotto jumbotron --}}
-        <div class="stripe-blue"></div>
+        <div class="stripe-blue">
+            {{-- Section equivalente a section.wrap --}}
+            <section class="wrap-stripe-blue">
+                {{-- box immagine con all'interno limmagine dinamica  --}}
+                <div class="dynamic-image">
+                    <img class="icon-immage" src="{{$card['thumb']}}" alt="">
+
+                    <div class="comic-book">
+                        <p class="inside-image-text">
+                            {{$card['type']}}
+                        </p>
+                    </div>
+
+                    <div class="view-gallery">
+                        <p class="inside-image-text">
+                            view gallery
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
 
         {{-- Prima sezione dopo straiscia blu --}}
         <div class="top">
             <section class="wrap">
                 {{-- descrizione sulla sinistra --}}
                 <div class="description">
-                    <h1 class="title">{{$card['title']}}</h1>
+                    <h3 class="title">{{$card['title']}}</h3>
                     {{-- barra verde --}}
                     <div class="check">
                         <div class="aside-left">
-                            <p>
-                                <span>U.S. Price:</span>
-                                <span class="price">{{$card['price']}}</span>
-                            </p>
-                            <span class="disponibility">avalaible</span>
+                            <div>
+                                <span class="price">U.S. Price:</span>
+                                <span class="price value">{{$card['price']}}</span>
+                            </div>
+                            <span class="disponibility">
+                                avalaible
+                            </span>
                         </div>
                         <div class="aside-right">
-                            <span>Check Avalability</span>
+                            <span class="check-avalability">
+                                Check Avalability
+                            </span>
                         </div>
                     </div>
                     {{-- descrizione --}}
-                    <p>{{$card['description']}}</p>
+                    <p class="card-description">{{$card['description']}}</p>
                 </div>
 
                 {{-- icona dell'immagine sulla destra --}}
                 <div class="icon">
-                    <img class="icon-immage" src="{{$card['thumb']}}" alt="">
+                    <img class="static-immage" src="/img/adv.jpg" alt="">
+                </div>
+
+                <div class="advertisement">
+                    <p class="advertisement-text">advertsement</p>
                 </div>
 
             </section>

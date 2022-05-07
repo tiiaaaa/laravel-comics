@@ -29,6 +29,9 @@ div.header section.my-container nav#navbar-list ul li {
   margin-left: 1.2rem;
   height: 100%;
 }
+div.header section.my-container nav#navbar-list ul li:hover, div.header section.my-container nav#navbar-list ul li.active {
+  border-bottom: 3px solid #0282f9;
+}
 div.header section.my-container nav#navbar-list ul li a {
   font-size: 0.7rem;
   font-weight: 600;
